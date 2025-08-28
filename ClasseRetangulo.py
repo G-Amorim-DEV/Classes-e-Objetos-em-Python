@@ -1,0 +1,18 @@
+# Definindo a Classe
+class Retangulo:
+    def __init__(self, largura, altura):
+        self.largura = float(largura)
+        self.altura = float(altura)
+
+    def area(self):
+        print(f"A área é de {self.altura * self.largura:.2f}")
+
+    def perimetro(self):
+        print(f"O perímetro é de {2 * (self.altura + self.largura):.2f}")
+
+
+# Criando o objeto corretamente
+retangulo = Retangulo(5, 3)
+
+retangulo.area()
+retangulo.perimetro()
